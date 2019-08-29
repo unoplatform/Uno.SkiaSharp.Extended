@@ -39,7 +39,7 @@ jobs:
   - task: CopyFiles@2
     displayName: 'Publish Nuget Packages'
     inputs:
-      SourceFolder: $(build.sourcesdirectory)/source
+      SourceFolder: $(build.sourcesdirectory)
       Contents: '**/Uno.SkiaSharp.*.nupkg'
       TargetFolder: $(build.artifactstagingdirectory)/skiasharp-wasm
       CleanTargetFolder: false
