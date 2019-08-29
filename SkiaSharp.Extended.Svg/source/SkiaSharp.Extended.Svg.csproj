@@ -38,7 +38,7 @@
 
   <ItemGroup>
     <PackageReference Include="MSBuild.Sdk.Extras" Version="1.6.55" PrivateAssets="All" />
-    <PackageReference Include="Uno.SkiaSharp.Wasm" Version="1.68.0-uno.226" />
+    <PackageReference Include="Uno.SkiaSharp.Wasm" Version="1.68.0-uno.228" />
   </ItemGroup>
 
   <Import Project="$(MSBuildSDKExtrasTargets)" Condition="Exists('$(MSBuildSDKExtrasTargets)')" />
