@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard1.3</TargetFrameworks>
-    <AssemblyName>SkiaSharp.Extended</AssemblyName>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Uno.SkiaSharp.Wasm.Extended</AssemblyName>
     <RootNamespace>SkiaSharp.Extended</RootNamespace>
     <AssemblyVersion>1.68.0.0</AssemblyVersion>
     <AssemblyFileVersion>1.68.0.0</AssemblyFileVersion>
@@ -14,14 +14,12 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>SkiaSharp.Extended</PackageId>
-    <Title>SkiaSharp.Extended</Title>
+    <PackageId>Uno.SkiaSharp.Wasm.Extended</PackageId>
+    <Title>Uno.SkiaSharp.Wasm.Extended</Title>
     <PackageVersion Condition=" '$(VersionSuffix)' != '' ">$(Version)-$(VersionSuffix)</PackageVersion>
     <Authors>Microsoft</Authors>
     <Owners>Microsoft</Owners>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Description>This package adds many additional features and utilities for use with SkiaSharp.</Description>
-    <Copyright>© Microsoft Corporation. All rights reserved.</Copyright>
     <PackageIconUrl>https://go.microsoft.com/fwlink/?linkid=868516</PackageIconUrl>
     <PackageTags>xamarin graphics ios android linux windows uwp tvos watchos macos cross-platform skiasharp</PackageTags>
     <PackageLicenseUrl>https://go.microsoft.com/fwlink/?linkid=2072003</PackageLicenseUrl>
@@ -43,7 +41,7 @@
 
   <ItemGroup>
     <PackageReference Include="MSBuild.Sdk.Extras" Version="1.6.55" PrivateAssets="All" />
-    <PackageReference Include="SkiaSharp" Version="1.68.0" />
+    <PackageReference Include="Uno.SkiaSharp.Wasm" Version="1.68.0-uno.226" />
   </ItemGroup>
 
   <Import Project="$(MSBuildSDKExtrasTargets)" Condition="Exists('$(MSBuildSDKExtrasTargets)')" />

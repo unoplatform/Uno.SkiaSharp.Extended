@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard1.3</TargetFrameworks>
-    <AssemblyName>SkiaSharp.Extended.Svg</AssemblyName>
-    <RootNamespace>SkiaSharp.Extended.Svg</RootNamespace>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Uno.SkiaSharp.Wasm.Extended.Svg</AssemblyName>
+    <RootNamespace>Uno.SkiaSharp.Wasm.Extended.Svg</RootNamespace>
     <AssemblyVersion>1.68.0.0</AssemblyVersion>
     <AssemblyFileVersion>1.68.0.0</AssemblyFileVersion>
     <Version>1.68.0</Version>
@@ -11,10 +11,12 @@
     <NeutralLanguage>en</NeutralLanguage>
     <DefineConstants>$(DefineConstants);</DefineConstants>
     <KeyFileName>mono.snk</KeyFileName>
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>SkiaSharp.Svg</PackageId>
+    <PackageId>Uno.SkiaSharp.Wasm.Svg</PackageId>
     <Title>SVG Support for SkiaSharp</Title>
     <PackageVersion Condition=" '$(VersionSuffix)' != '' ">$(Version)-$(VersionSuffix)</PackageVersion>
     <Authors>Microsoft</Authors>
@@ -33,17 +35,9 @@
     <DefineConstants>$(DefineConstants);NET_STANDARD;</DefineConstants>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
-    <DebugType>full</DebugType>
-    <DebugSymbols>true</DebugSymbols>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)'=='Release' ">
-    <DebugType>pdbonly</DebugType>
-  </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="MSBuild.Sdk.Extras" Version="1.6.55" PrivateAssets="All" />
-    <PackageReference Include="SkiaSharp" Version="1.68.0" />
+    <PackageReference Include="Uno.SkiaSharp.Wasm" Version="1.68.0-uno.226" />
   </ItemGroup>
 
   <Import Project="$(MSBuildSDKExtrasTargets)" Condition="Exists('$(MSBuildSDKExtrasTargets)')" />
