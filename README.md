@@ -1,6 +1,9 @@
-# SkiaSharp.Extended
+# SkiaSharp.Extended for WebAssembly
 
-[![Build Status](https://dev.azure.com/devdiv/DevDiv/_apis/build/status/Xamarin/Components/SkiaSharp.Extended?branchName=master)](https://dev.azure.com/devdiv/DevDiv/_build/latest?definitionId=10846&branchName=master)  [![Build Status](https://dev.azure.com/xamarin/public/_apis/build/status/mono/SkiaSharp/SkiaSharp.Extended%20(Public)?branchName=master)](https://dev.azure.com/xamarin/public/_build/latest?definitionId=6&branchName=master)
+This repository is the home for the port of [SkiaSharp.Extended](https://github.com/mono/SkiaSharp.Extended) packages 
+for WebAssembly with the Uno Platform. This package uses the [Uno.SkiaSharp.Wasm](https://www.nuget.org/packages/Uno.SkiaSharp.Wasm) package for WebAssembly.
+
+[![Build Status](https://uno-platform.visualstudio.com/Uno%20Platform/_apis/build/status/Uno%20Platform/Uno.SkiaSharp.Extended?branchName=uno)](https://uno-platform.visualstudio.com/Uno%20Platform/_build/latest?definitionId=62&branchName=uno)
 
 **SkiaSharp.Extended** is a collection some cool libraries that may be
 useful to some apps. There are several repositories that may have
@@ -8,23 +11,26 @@ interesting projects:
 
  - [SkiaSharp][skiasharp] _(the engine)_
  - [SkiaSharp.Extended][extended] _(additional APIs)_
- - [SkiaSharp.Extended.Iconify][iconify] _(iconify library)_
+ - [SkiaSharp.Extended.Iconify][iconify] _(iconify library)_ (Not yet supported for WebAssembly)
  - [SkiaSharp.Extended.Svg][svg] _(lightweight SVG loader)_
 
-## Building
+## Using SkiaSharp.Extended on WebAssembly
 
-Each sub-directory has a solution file that can be opened in Visual Studio or
-built by MSBuild. All scripting and tasks are performed by MSBuild, so no
-external tooling is needed.
+The support for Extended and SVG is provided in the form of two packages :
 
-There is a single PowerShell/bash script that can be used to build the entire
-repository:
+- [Uno.SkiaSharp.Wasm.Extended](https://www.nuget.org/packages/Uno.SkiaSharp.Wasm.Extended)
+- [Uno.SkiaSharp.Wasm.Svg](https://www.nuget.org/packages/Uno.SkiaSharp.Wasm.Svg)
 
-    > .\build.ps1
-    $ ./build.sh
+Those packages can only be used on a WebAssembly head running on top of the Uno Platform. For other heads, see use of the official [Extended](https://www.nuget.org/packages/SkiaSharp.Extended/) and [Svg](https://www.nuget.org/packages/SkiaSharp.Svg/) packages.
 
-The CI server just runs that single file and outputs all the packages,
-assemblies and test results.
+Some samples of the apps ([Extended](https://github.com/unoplatform/Uno.SkiaSharp.Extended/blob/uno/SkiaSharp.Extended/SkiaSharpUnoDemo/SkiaSharpUnoDemo.Shared/MainPage.xaml) and [Svg](https://github.com/unoplatform/Uno.SkiaSharp.Extended/blob/uno/SkiaSharp.Extended.Svg/SkiaSharpUnoDemo/SkiaSharpUnoDemo.Shared/MainPage.xaml.cs)) in the repository:
+
+![Extended](images/20190718-skia-extended.gif)
+![SVG](images/20190718-skia-svg.gif)
+
+## Building 
+
+Open either the [Svg](https://github.com/unoplatform/Uno.SkiaSharp.Extended/tree/uno/SkiaSharp.Extended.Svg) solution or the [Extended](https://github.com/unoplatform/Uno.SkiaSharp.Extended/tree/uno/SkiaSharp.Extended) solution and build the included sample apps.
 
 ## License
 
