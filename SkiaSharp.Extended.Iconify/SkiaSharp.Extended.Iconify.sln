@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2036
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29111.141
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkiaSharp.Extended.Iconify", "source\SkiaSharp.Extended.Iconify\SkiaSharp.Extended.Iconify.csproj", "{C020BBFB-1814-43A5-8814-042FDE8F1F0A}"
 EndProject
@@ -406,6 +406,8 @@ Global
 		{108D8FA2-92DB-4D6F-8E94-1C138CFC15E8}.Debug|ARM.ActiveCfg = Debug|ARM
 		{108D8FA2-92DB-4D6F-8E94-1C138CFC15E8}.Debug|ARM.Build.0 = Debug|ARM
 		{108D8FA2-92DB-4D6F-8E94-1C138CFC15E8}.Debug|ARM.Deploy.0 = Debug|ARM
+		{108D8FA2-92DB-4D6F-8E94-1C138CFC15E8}.Debug|iPhone.ActiveCfg = Debug|x86
+		{108D8FA2-92DB-4D6F-8E94-1C138CFC15E8}.Debug|iPhoneSimulator.ActiveCfg = Debug|x86
 		{108D8FA2-92DB-4D6F-8E94-1C138CFC15E8}.Debug|x64.ActiveCfg = Debug|x64
 		{108D8FA2-92DB-4D6F-8E94-1C138CFC15E8}.Debug|x64.Build.0 = Debug|x64
 		{108D8FA2-92DB-4D6F-8E94-1C138CFC15E8}.Debug|x64.Deploy.0 = Debug|x64
@@ -418,6 +420,8 @@ Global
 		{108D8FA2-92DB-4D6F-8E94-1C138CFC15E8}.Release|ARM.ActiveCfg = Release|ARM
 		{108D8FA2-92DB-4D6F-8E94-1C138CFC15E8}.Release|ARM.Build.0 = Release|ARM
 		{108D8FA2-92DB-4D6F-8E94-1C138CFC15E8}.Release|ARM.Deploy.0 = Release|ARM
+		{108D8FA2-92DB-4D6F-8E94-1C138CFC15E8}.Release|iPhone.ActiveCfg = Release|x86
+		{108D8FA2-92DB-4D6F-8E94-1C138CFC15E8}.Release|iPhoneSimulator.ActiveCfg = Release|x86
 		{108D8FA2-92DB-4D6F-8E94-1C138CFC15E8}.Release|x64.ActiveCfg = Release|x64
 		{108D8FA2-92DB-4D6F-8E94-1C138CFC15E8}.Release|x64.Build.0 = Release|x64
 		{108D8FA2-92DB-4D6F-8E94-1C138CFC15E8}.Release|x64.Deploy.0 = Release|x64
