@@ -1,9 +1,15 @@
-# SkiaSharp.Extended for WebAssembly
+<h1 align:"center">SkiaSharp.Extended for WebAssembly</h1>
 
-This repository is the home for the port of [SkiaSharp.Extended](https://github.com/mono/SkiaSharp.Extended) packages 
-for WebAssembly with the Uno Platform. This package uses the [Uno.SkiaSharp.Wasm](https://www.nuget.org/packages/Uno.SkiaSharp.Wasm) package for WebAssembly.
+<p align="center">
+This repository is the home for the port of <a href="https://github.com/mono/SkiaSharp.Extended">SkiaSharp.Extended</a> packages for WebAssembly with the Uno Platform. This package uses the <a href="https://www.nuget.org/packages/Uno. SkiaSharp.Wasm">Uno.SkiaSharp.Wasm</a> package for WebAssembly.
+</p>
 
-[![Build Status](https://uno-platform.visualstudio.com/Uno%20Platform/_apis/build/status/Uno%20Platform/Uno.SkiaSharp.Extended?branchName=uno)](https://uno-platform.visualstudio.com/Uno%20Platform/_build/latest?definitionId=62&branchName=uno)
+<p align="center">
+ <a href="https://uno-platform.visualstudio.com/Uno%20Platform/_build/latest?definitionId=62&branchName=uno">
+  <img src="https://uno-platform.visualstudio.com/Uno%20Platform/_apis/build/status/Uno%20Platform/Uno.SkiaSharp.Extended?branchName=uno" alt="Build Status"/>
+ </a>
+</p>
+
 
 **SkiaSharp.Extended** is a collection of some cool libraries that may be
 useful to some apps. There are several repositories that may have
@@ -18,8 +24,8 @@ interesting projects:
 
 The support for Extended and SVG is provided in the form of two packages :
 
-- [Uno.SkiaSharp.Wasm.Extended](https://www.nuget.org/packages/Uno.SkiaSharp.Wasm.Extended) for Extended
-- [Uno.SkiaSharp.Wasm.Svg](https://www.nuget.org/packages/Uno.SkiaSharp.Wasm.Svg) for Svg
+- [Uno.SkiaSharp.Wasm.Extended](https://www.nuget.org/packages/Uno.SkiaSharp.Wasm.Extended) (for Extended)
+- [Uno.SkiaSharp.Wasm.Svg](https://www.nuget.org/packages/Uno.SkiaSharp.Wasm.Svg) (for Svg)
 
 Those packages can only be used on a WebAssembly head running on top of the Uno Platform. For other heads, check out the use of the official [Extended](https://www.nuget.org/packages/SkiaSharp.Extended/) and [Svg](https://www.nuget.org/packages/SkiaSharp.Svg/) packages.
 
